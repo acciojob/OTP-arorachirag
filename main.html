@@ -3,32 +3,40 @@
 <html>
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-	<div id="box">
-		<h1 id="verification_heading">Verify Your Account</h1>
-		<h2 id="verification_subtext">
-			We emailed you the six digit code to acciojob@email.com Enter the code below to confirm your email address.
-		</h2>
-		<div id=card>
-			<input type="number" id="otp" placeholder='0'>
-			<input type="number" id="otp" placeholder='0'>
-			<input type="number" id="otp" placeholder='0'>
-			<input type="number" id="otp" placeholder='0'>
-			<input type="number" id="otp" placeholder='0'>
-			<input type="number" id="otp" placeholder='0'>
+    <div id="main">
+	
+	<div>	
+        <h2 id="verification_heading">
+			Verify Your Account
+		</h2>	
+		
+		<div id="verification_subtext">We emailed your the six digits code to acciojob@email.com 
+			Enter the code below to confirm your email address.
 		</div>
-		<div id="foot-box">
-			<div id=foot>
-				This is design only.We didn't actually send you an email as we don't have your email,right?
-			</div>
-		</div>	
-	</div>
-    <script type="text/javascript" src="./script.js">
-</script>
+		
+    </div>
+
+        <div class="code-container" id="codeContainer">
+            <input type="number" class="code" maxlength="1" max="9" min="0" id="code-1" placeholder="0" required>
+            <input type="number" class="code" maxlength="1" max="9" min="0" id="code-2" placeholder="0" required>
+            <input type="number" class="code" maxlength="1" max="9" min="0" id="code-3" placeholder="0" required>
+            <input type="number" class="code" maxlength="1" max="9" min="0" id="code-4" placeholder="0" required>
+            <input type="number" class="code" maxlength="1" max="9" min="0" id="code-5" placeholder="0" required>
+            <input type="number" class="code" maxlength="1" max="9" min="0" id="code-6" placeholder="0" required>
+        </div>
+        <div class="lowtext">
+            <p class="mess">This is design only. we didn't actually send 
+                you and emaiil as we <br>
+                don't have your email, right?
+            </p>
+        </div>
+    </div>
+	
+  <script type="text/javascript" src="./script.js"></script>
 
 </body>
 
